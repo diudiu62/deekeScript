@@ -1,4 +1,4 @@
-declare class App {
+export class App {
     /**
      * 获取当前包名
      */

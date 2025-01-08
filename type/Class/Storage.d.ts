@@ -1,4 +1,4 @@
-declare class Storage {
+export class Storage {
     /**
      * 创建存储实例  全局使用一个即可
      * @param db 数据库名称

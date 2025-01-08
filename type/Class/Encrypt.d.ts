@@ -1,4 +1,4 @@
-declare class Encrypt{
+export class Encrypt{
     /**
      * md5加密
      * @param input 

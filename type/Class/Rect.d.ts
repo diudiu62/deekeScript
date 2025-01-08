@@ -1,5 +1,4 @@
-
-declare class Rect {
+export class Rect {
     left: number;
     top: number;
     right: number;

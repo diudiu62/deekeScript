@@ -1,7 +1,7 @@
 /**
  * 控件对象
  */
-declare class UiObject {
+export class UiObject {
     /**
      * 点击控件
      */

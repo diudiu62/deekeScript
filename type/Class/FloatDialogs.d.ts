@@ -1,4 +1,4 @@
-declare class FloatDialogs {
+export class FloatDialogs {
     /**
      * 悬浮窗弹窗（需要开启悬浮窗权限）
      * @param title 弹窗标题

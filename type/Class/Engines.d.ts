@@ -1,4 +1,4 @@
-declare class Engines {
+export class Engines {
     /**
      * 执行脚本
      * @param file 文件路径，相对根目录的路径

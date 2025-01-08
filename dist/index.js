@@ -1,2 +1,1 @@
-"use strict";
-let a = new UiSelector();
+(()=>{"use strict";UiSelector().className("name").find(),App.getAppVersionCode("name")})();

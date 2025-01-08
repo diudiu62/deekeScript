@@ -1,3 +1,3 @@
-declare class Intent{
+export class Intent{
     
 }

@@ -1,7 +1,7 @@
 /**
  * 控件选择器
  */
-declare class UiSelector {
+export class UiSelector {
     //public setLevel(level: number): UiSelector; //这个方法待完善
     //public getLevel(): number;//这个方法待完善
     public UiSelector(): void;//使用new UiSelector()  或者  UiSelector() 都可以实例化选择器

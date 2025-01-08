@@ -1,4 +1,4 @@
-declare class System {
+export class System {
     /**
      * 休眠
      * @param milliSecond 毫秒

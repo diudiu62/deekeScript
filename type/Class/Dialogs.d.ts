@@ -1,4 +1,4 @@
-declare class Dialogs {
+export class Dialogs {
     /**
      * 弹窗（App内运行）
      * @param title 标题

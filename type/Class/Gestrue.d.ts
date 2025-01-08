@@ -1,4 +1,4 @@
-declare class Gestrue{
+export class Gestrue{
     /**
      * 点击屏幕位置
      * @param x x坐标

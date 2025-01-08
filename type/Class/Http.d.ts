@@ -1,4 +1,4 @@
-declare class Http {
+export class Http {
     /**
      * post请求  {"Content-Type":"application/json"}
      * @param url 请求地址

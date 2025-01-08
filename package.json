@@ -1,12 +1,13 @@
 {
-  "name": "my-first-app",
+  "name": "my-first-deeke-script-app",
   "version": "1.0.0",
   "description": "我的第一个DeekeScript应用",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "webpack-build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,13 @@
   },
   "homepage": "https://github.com/DeekeScript/deekeScript#readme",
   "devDependencies": {
-    "typescript": "^5.7.2"
+    "file-loader": "^6.2.0",
+    "glob": "^11.0.0",
+    "terser-webpack-plugin": "^5.3.11",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }

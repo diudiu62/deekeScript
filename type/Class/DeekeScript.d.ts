@@ -1,3 +1,3 @@
-declare class DeekeScript {
+export class DeekeScript {
     public version(): number;
 }

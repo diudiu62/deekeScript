@@ -1,4 +1,4 @@
-declare class Device {
+export class Device {
     /**
      * 保持屏幕常亮（需要在当前App界面）
      * @param second 屏幕保持亮屏时间，单位秒
