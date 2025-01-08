@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
         "jiangqiao"
-    ]
+    ],
+    "files.exclude": {
+        "**/node_modules": true, // 隐藏 node_modules 文件夹
+        "**/@type": true, // 隐藏 node_modules 文件夹
+    }
 }

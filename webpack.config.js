@@ -1,6 +1,7 @@
 const path = require('path');
 const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
+const scriptDir = 'script';
 
 module.exports = {
     entry: {
@@ -22,7 +23,7 @@ module.exports = {
             // 根据相对路径生成对应的输出路径
             return `${relativePath}.js`;  // 输出结构与入口文件相同
         },
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, scriptDir),
     },
     resolve: {
         extensions: ['.ts', '.js'], // 解析扩展名
@@ -33,22 +34,6 @@ module.exports = {
                 test: /\.ts$/,
                 use: 'ts-loader', // 使用 ts-loader 编译 TypeScript
                 exclude: /node_modules/,
-            },
-            {
-                test: /\.(png)$/i,  // 匹配 PNG 图片
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            // 保留源目录结构并输出到 dist 文件夹
-                            name: (resourcePath) => {
-                                // 提取相对路径，移除 src 目录，保留其他目录结构
-                                const relativePath = path.relative(path.resolve(__dirname, 'src'), resourcePath);
-                                return `dist/${relativePath}`;
-                            },
-                        },
-                    },
-                ],
             },
         ],
     },
