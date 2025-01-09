@@ -5,4 +5,4 @@
 **最终能开发出什么样的应用❓请移步查阅：
 [https://github.com/DeekeScript/ad-deeke](https://github.com/DeekeScript/ad-deeke)**
 
-### 关于DeekeScript的环境部署与安装以及开发文档，请移步查阅：[https://deekescript.github.io/](https://deekescript.github.io/)
+#### 关于DeekeScript的环境搭建以及开发文档，请查阅：[https://deekescript.github.io/](https://deekescript.github.io/)
