@@ -56,7 +56,7 @@
       {
         "title": "推荐营销",
         "icon": "img/finger.png",
-        "jsFile": "tasks/task_dy_toker.js",
+        "jsFile": "script/tasks/task_dy_toker.js",
         "settingPage": {
           "params": [
             {
@@ -218,7 +218,7 @@
       {
         "title": "同城营销",
         "icon": "img/city.png",
-        "jsFile": "tasks/task_dy_toker_city.js",
+        "jsFile": "script/tasks/task_dy_toker_city.js",
         "settingPage": {
           "params": [
             {
@@ -390,7 +390,7 @@
         "title": "工具箱",
         "hidden": false,
         "icon": "img/tool.png",
-        "jsFile": "tasks/tool.js",
+        "jsFile": "script/tasks/tool.js",
         "activity": {
           "notice": "暂无功能~",
           "title": "工具箱",
@@ -400,7 +400,7 @@
               "title": "一键取赞",
               "hidden": false,
               "icon": "img/cancel_zan.png",
-              "jsFile": "tasks/task_dy_cancel_zan.js",
+              "jsFile": "script/tasks/task_dy_cancel_zan.js",
               "settingPage": {
                 "params": [
                   {
@@ -414,7 +414,7 @@
               "title": "一键取关",
               "hidden": false,
               "icon": "img/cancel_focus.png",
-              "jsFile": "tasks/task_dy_cancel_focus.js",
+              "jsFile": "script/tasks/task_dy_cancel_focus.js",
               "settingPage": {
                 "params": [
                   {
@@ -433,7 +433,7 @@
               "title": "粉丝回访",
               "hidden": false,
               "icon": "img/view_back.png",
-              "jsFile": "tasks/task_dy_fans_back_view.js",
+              "jsFile": "script/tasks/task_dy_fans_back_view.js",
               "settingPage": {
                 "params": [
                   {
@@ -449,7 +449,7 @@
       {
         "title": "粉丝截流",
         "icon": "img/fans.png",
-        "jsFile": "tasks/task_dy_toker_fans.js",
+        "jsFile": "script/tasks/task_dy_toker_fans.js",
         "settingPage": {
           "params": [
             {
@@ -527,7 +527,7 @@
       {
         "title": "关注截流",
         "icon": "img/anchor_focus.png",
-        "jsFile": "tasks/task_dy_toker_focus.js",
+        "jsFile": "script/tasks/task_dy_toker_focus.js",
         "hidden": false,
         "settingPage": {
           "params": [
@@ -607,7 +607,7 @@
         "title": "评论区截流",
         "hidden": false,
         "icon": "img/speech-say.png",
-        "jsFile": "tasks/task_dy_toker_comment.js",
+        "jsFile": "script/tasks/task_dy_toker_comment.js",
         "settingPage": {
           "params": [
             {
@@ -639,7 +639,7 @@
         "title": "直播间截流",
         "hidden": false,
         "icon": "img/live.png",
-        "jsFile": "tasks/task_dy_toker_live.js",
+        "jsFile": "script/tasks/task_dy_toker_live.js",
         "settingPage": {
           "params": [
             {
@@ -693,7 +693,7 @@
         "title": "粉丝群截流",
         "hidden": false,
         "icon": "img/tuandui.png",
-        "jsFile": "tasks/task_dy_fans_group.js",
+        "jsFile": "script/tasks/task_dy_fans_group.js",
         "settingPage": {
           "params": [
             {
@@ -718,7 +718,7 @@
         "title": "智能询盘",
         "hidden": false,
         "icon": "img/user-get.png",
-        "jsFile": "tasks/task_dy_search_inquiry.js",
+        "jsFile": "script/tasks/task_dy_search_inquiry.js",
         "settingPage": {
           "params": [
             {
@@ -749,7 +749,7 @@
         "title": "垂直养号",
         "hidden": false,
         "icon": "img/vertical.png",
-        "jsFile": "tasks/task_dy_search_vertical.js",
+        "jsFile": "script/tasks/task_dy_search_vertical.js",
         "settingPage": {
           "params": [
             {
@@ -800,7 +800,7 @@
       {
         "title": "快速涨粉",
         "icon": "img/fans-inc.png",
-        "jsFile": "tasks/task_dy_fans_inc_main.js",
+        "jsFile": "script/tasks/task_dy_fans_inc_main.js",
         "settingPage": {
           "params": [
             {
@@ -869,13 +869,13 @@
         "title": "精准投放",
         "hidden": true,
         "icon": "img/hot.png",
-        "jsFile": "tasks/task_dy_toker_fans.js"
+        "jsFile": "script/tasks/task_dy_toker_fans.js"
       },
       {
         "title": "喜欢截流",
         "hidden": false,
         "icon": "img/precise-user.png",
-        "jsFile": "tasks/task_dy_consum_user.js",
+        "jsFile": "script/tasks/task_dy_consum_user.js",
         "settingPage": {
           "params": [
             {
@@ -899,7 +899,7 @@
       {
         "title": "轻松拓客",
         "icon": "img/qingsong.png",
-        "jsFile": "tasks/task_dy_qingsong_tuoke.js",
+        "jsFile": "script/tasks/task_dy_qingsong_tuoke.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "packageName": "com.ss.android.ugc.aweme",
@@ -1000,7 +1000,7 @@
       {
         "title": "赞回访",
         "icon": "img/zan.png",
-        "jsFile": "tasks/task_dy_zan_back.js",
+        "jsFile": "script/tasks/task_dy_zan_back.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "packageName": "com.ss.android.ugc.aweme",
@@ -1089,7 +1089,7 @@
       {
         "title": "好友转化",
         "icon": "img/friend.png",
-        "jsFile": "tasks/task_dy_friend_change.js",
+        "jsFile": "script/tasks/task_dy_friend_change.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "packageName": "com.ss.android.ugc.aweme",
@@ -1184,7 +1184,7 @@
         "title": "UID私信",
         "columns": 2,
         "icon": "img/private-2.png",
-        "jsFile": "tasks/task_dy_toker_uid.js",
+        "jsFile": "script/tasks/task_dy_toker_uid.js",
         "settingPage": {
           "params": [
             {
@@ -1227,7 +1227,7 @@
       {
         "title": "UID邀约",
         "icon": "img/invite.png",
-        "jsFile": "tasks/task_dy_toker_invite.js",
+        "jsFile": "script/tasks/task_dy_toker_invite.js",
         "packageName": "com.ss.android.ugc.aweme",
         "settingPage": {
           "params": [
@@ -1258,7 +1258,7 @@
         "title": "精准行业",
         "hidden": false,
         "icon": "img/rocket.png",
-        "jsFile": "tasks/task_dy_search_user.js",
+        "jsFile": "script/tasks/task_dy_search_user.js",
         "columns": 2,
         "settingPage": {
           "params": [
@@ -1342,7 +1342,7 @@
         "hidden": false,
         "columns": 1,
         "icon": "img/team-buy.png",
-        "jsFile": "tasks/task_dy_team_buy.js",
+        "jsFile": "script/tasks/task_dy_team_buy.js",
         "minVersion": 290700,
         "settingPage": {
           "params": [
@@ -1414,7 +1414,7 @@
         "title": "直播间弹幕",
         "hidden": false,
         "icon": "img/barrage.png",
-        "jsFile": "tasks/task_dy_live_barrage.js",
+        "jsFile": "script/tasks/task_dy_live_barrage.js",
         "columns": 2,
         "settingPage": {
           "params": [
@@ -1471,7 +1471,7 @@
         "hidden": false,
         "columns": 1,
         "icon": "img/comment-2.png",
-        "jsFile": "tasks/task_dy_toker_video.js",
+        "jsFile": "script/tasks/task_dy_toker_video.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "packageName": "com.ss.android.ugc.aweme",
@@ -1530,12 +1530,12 @@
         "title": "功能演示",
         "hidden": true,
         "icon": "img/show.png",
-        "jsFile": "tasks/task_dy_toker_fans.js"
+        "jsFile": "script/tasks/task_dy_toker_fans.js"
       },
       {
         "title": "万能营销",
         "icon": "img/xhs-wanneng.png",
-        "jsFile": "tasks/task_xhs_toker.js",
+        "jsFile": "script/tasks/task_xhs_toker.js",
         "columns": 1,
         "settingPage": {
           "params": [
@@ -1703,7 +1703,7 @@
       {
         "title": "同行拓客",
         "icon": "img/xhs-fans.png",
-        "jsFile": "tasks/task_xhs_fans.js",
+        "jsFile": "script/tasks/task_xhs_fans.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "columns": 1,
@@ -1788,7 +1788,7 @@
       {
         "title": "赞回访",
         "icon": "img/xhs-zan.png",
-        "jsFile": "tasks/task_xhs_zan_back.js",
+        "jsFile": "script/tasks/task_xhs_zan_back.js",
         "runType": "floatSwitch",
         "autoOpen": true,
         "columns": 1,
@@ -1810,7 +1810,7 @@
         "title": "USER_ID私信",
         "columns": 2,
         "icon": "img/private-2.png",
-        "jsFile": "tasks/task_xhs_toker_uid.js",
+        "jsFile": "script/tasks/task_xhs_toker_uid.js",
         "settingPage": {
           "params": [
             {
@@ -1854,7 +1854,7 @@
         "title": "垂直养号",
         "columns": 2,
         "icon": "img/vertical.png",
-        "jsFile": "tasks/task_xhs_yanghao.js",
+        "jsFile": "script/tasks/task_xhs_yanghao.js",
         "packageName": "com.ss.android.ugc.aweme",
         "settingPage": {
           "params": [
