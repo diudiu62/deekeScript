@@ -6,3 +6,9 @@
 [https://github.com/DeekeScript/ad-deeke](https://github.com/DeekeScript/ad-deeke)**
 
 #### 关于DeekeScript的环境搭建以及开发文档，请查阅：[https://deekescript.github.io/](https://deekescript.github.io/)
+
+
+#### Tips 📢
+> 文件夹@deekeScript请不要删除，此代码会提供代码提示能力~
+
+> 项目的node_modules文件夹不见了？请打开.vscode/setting.json注释掉隐藏代码即可~
