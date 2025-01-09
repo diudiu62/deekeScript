@@ -1,1 +1,2 @@
-(()=>{"use strict";console.log(2323)})();
+(()=>{"use strict";let e={name:1,getName(){return this.name},setName(e){return 42..foo(),this.name}};console.log("name = "+e.getName()),console.log(e.setName(0)),console.log(e.setName(1))})();
+//# sourceMappingURL=task\task.js.map

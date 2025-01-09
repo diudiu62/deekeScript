@@ -4,6 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const scriptDir = 'script';
 
 module.exports = {
+    devtool: 'source-map',
     entry: {
         index: './src/index.ts',  // 主入口文件
         // 动态获取 src/task 下所有的 .ts 文件
