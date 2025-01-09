@@ -5,7 +5,7 @@ declare global {
          * @param db 数据库名称
          * @return 返回当前实例，如果已存在则直接返回
          */
-        public static create(db: string): this;
+        public static create(db: string): Storage;
 
         /**
          * 设置字符串
