@@ -1,3 +1,7 @@
-export class Intent{
-    
+declare global {
+    class Intent {
+
+    }
 }
+
+export { };
