@@ -4,6 +4,6 @@
     ],
     "files.exclude": {
         "**/node_modules": true, // 隐藏 node_modules 文件夹
-        //"**/@type": true, // 隐藏 DeekeScript定义的类型文件
+        "**/@type": true, // 隐藏 DeekeScript定义的类型文件
     }
 }
