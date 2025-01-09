@@ -1,4 +1,4 @@
-import { UiObject } from "./UiObject";
+import { UiObject } from "../interface/UiObject";
 
 declare global {
     function UiSelector(): UiSelector;

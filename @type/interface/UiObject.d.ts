@@ -3,7 +3,7 @@
  * 控件对象
  */
 declare global {
-    class UiObject {
+    interface UiObject {
         /**
          * 点击控件
          */
