@@ -2,6 +2,7 @@ const path = require('path');
 const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 const scriptDir = 'script';
+const WebpackObfuscator = require('webpack-obfuscator');//代码混淆
 
 module.exports = {
     devtool: 'source-map',
@@ -45,8 +46,21 @@ module.exports = {
                 terserOptions: {
                     compress: true,  // 启用压缩
                     mangle: true,    // 启用混淆
+                    output: {
+                        comments: false, // 去掉注释
+                    },
                 },
             }),
         ],
     },
+    plugins: [
+        new WebpackObfuscator({
+            rotateStringArray: true,  // 启用字符串数组混淆
+            controlFlowFlattening: true,  // 控制流扁平化
+            deadCodeInjection: true,  // 注入死代码
+            stringArray: true,  // 启用字符串数组化
+            stringArrayThreshold: 0.75,  // 配置字符串数组化的阈值
+            disableConsoleOutput: true,  // 禁用 console 输出
+          }), // 指定要混淆的文件
+    ]
 };
