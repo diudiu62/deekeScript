@@ -26,7 +26,7 @@ async function mapErrorToTSStack(file: string, lineNumber: number, columnNumber:
 }
 
 // 使用转换函数
-mapErrorToTSStack("script/task/test.js", 1, 661, 'TypeError: Cannot read properties of null (reading \'someMethod\')').then(tsStack => {
+mapErrorToTSStack("script/task/test.js", 1, 622, 'TypeError: Cannot read properties of null (reading \'someMethod\')').then(tsStack => {
     console.log('Converted TypeScript Stack Trace:');
     console.log(tsStack);
 });
