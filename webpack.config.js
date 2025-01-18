@@ -60,7 +60,8 @@ module.exports = {
             deadCodeInjection: true,  // 注入死代码
             stringArray: true,  // 启用字符串数组化
             stringArrayThreshold: 0.75,  // 配置字符串数组化的阈值
-            disableConsoleOutput: true,  // 禁用 console 输出
-          }), // 指定要混淆的文件
+            disableConsoleOutput: false,  // 禁用 console 输出
+            sourceMap: true,  // 启用生成 sourcemap
+        }), // 指定要混淆的文件
     ]
 };
