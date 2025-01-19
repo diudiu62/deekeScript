@@ -1,6 +1,5 @@
 const path = require('path');
 const glob = require('glob');
-const TerserPlugin = require('terser-webpack-plugin');
 const scriptDir = 'script';
 const WebpackObfuscator = require('webpack-obfuscator');//代码混淆
 
@@ -40,22 +39,11 @@ module.exports = {
         ],
     },
     optimization: {
-        minimize: false,  // 启用代码压缩
-        minimizer: [
-            new TerserPlugin({
-                terserOptions: {
-                    compress: false,  // 启用压缩
-                    mangle: false,    // 启用混淆
-                    output: {
-                        comments: false, // 去掉注释
-                    },
-                },
-            }),
-        ],
+        minimize: false,  // 关闭代码压缩  开启后，代码行数会减少
     },
     plugins: [
         new WebpackObfuscator({
-            compact: false,  //启用压缩
+            compact: false,  //代码压缩  不建议开启，否则代码错误很难排查
             rotateStringArray: true,  // 启用字符串数组混淆
             controlFlowFlattening: true,  // 控制流扁平化
             deadCodeInjection: true,  // 注入死代码
