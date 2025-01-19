@@ -40,12 +40,12 @@ module.exports = {
         ],
     },
     optimization: {
-        minimize: true,  // 启用代码压缩
+        minimize: false,  // 启用代码压缩
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
-                    compress: true,  // 启用压缩
-                    mangle: true,    // 启用混淆
+                    compress: false,  // 启用压缩
+                    mangle: false,    // 启用混淆
                     output: {
                         comments: false, // 去掉注释
                     },
@@ -55,10 +55,11 @@ module.exports = {
     },
     plugins: [
         new WebpackObfuscator({
+            compact: false,  //启用压缩
             rotateStringArray: true,  // 启用字符串数组混淆
             controlFlowFlattening: true,  // 控制流扁平化
             deadCodeInjection: true,  // 注入死代码
-            stringArray: true,  // 启用字符串数组化
+            stringArray: true,  // 启用字符串数组化   不能启用，否则rhino无法处理
             stringArrayThreshold: 0.75,  // 配置字符串数组化的阈值
             disableConsoleOutput: false,  // 禁用 console 输出
             sourceMap: true,  // 启用生成 sourcemap
