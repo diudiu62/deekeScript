@@ -1,4 +1,6 @@
-"use strict";
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+
 let my = {
     name: 1,
     getName() {
@@ -13,4 +15,7 @@ let my = {
 console.log("name = " + my.getName());
 console.log(my.setName(0));
 console.log(my.setName(1));
+
+/******/ })()
+;
 //# sourceMappingURL=task.js.map
