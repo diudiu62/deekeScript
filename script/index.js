@@ -1,2 +1,20 @@
-(()=>{"use strict";var e={787:()=>{let e={name:1,getName(){return this.name},setName(e){return 42..foo(),this.name}};console.log("name = "+e.getName()),console.log(e.setName(0)),console.log(e.setName(1))}},t={};function o(r){var s=t[r];if(void 0!==s)return s.exports;var n=t[r]={exports:{}};return e[r](n,n.exports,o),n.exports}o(787)})();
+"use strict";
+// let uiSelector: UiSelector = UiSelector();
+// let uiSelector2: UiSelector = new UiSelector().checkable(true);
+// let uiObject: UiObject = UiSelector().findOne();
+Object.defineProperty(exports, "__esModule", { value: true });
+// let versionCode: number = App.getAppVersionCode("dfs");
+// let deekeScript: number = DeekeScript.version();
+// let device: number = Device.height();
+// let dialogs: void = Dialogs.show("标题", "内容");
+// let encrypt: string = Encrypt.md5("123456");
+// let engines: void = Engines.execScript("console.log(322);");
+// let floatDialog: void = FloatDialogs.show("title", "content");
+// let gesture: boolean = Gesture.click(1, 1);
+// let post: string = Http.post("url", { "name": "name" });
+// let intent: void = Intent.open();
+// let react: number = new Rect(1, 2, 3, 4).height();
+// let storage: string = Storage.create("my_db").getString("name");
+// let system: void = System.cleanUp();
+require("./task/task");
 //# sourceMappingURL=index.js.map
