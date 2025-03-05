@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
+    "deekeScript-zip-build": "tsc && node script/deekeScriptZipBuild.js",
     "start": "node script/index.js",
     "dev": "tsc --watch",
     "webpack-build": "webpack --mode production"
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/DeekeScript/deekeScript#readme",
   "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
     "file-loader": "^6.2.0",
     "glob": "^11.0.0",
     "terser-webpack-plugin": "^5.3.11",
@@ -33,5 +35,8 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0",
     "webpack-obfuscator": "^3.5.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
   }
 }
