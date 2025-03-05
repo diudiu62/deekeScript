@@ -1,17 +1,24 @@
-// zip.ts
-import path from 'path';
-import fs from 'fs';
-import AdmZip from 'adm-zip';
+const path = require('path');       // CommonJS 方式引入 path‌:ml-citation{ref="1,2" data="citationList"}  
+const fs = require('fs');          // 引入 fs 模块‌:ml-citation{ref="5" data="citationList"}  
+const AdmZip = require('adm-zip');  // 引入 adm-zip 库‌:ml-citation{ref="3,4" data="citationList"}  
 
 // 获取上层目录路径
 const parentDir = path.join(__dirname, '..');
 console.log('开始执行打包');
 
+fs.unlink(path.join(parentDir, 'deekeScript.zip'), (err) => {
+    if (err) {
+        //没有文件
+    } else {
+        //console.log('deekeScript.zip文件已删除');
+    }
+});
+
 // 创建 zip 实例
 const zip = new AdmZip();
 
 // 递归添加文件并排除目录
-function addFilesToZip(directory: string) {
+function addFilesToZip(directory) {
     const files = fs.readdirSync(directory);
 
     files.forEach(file => {
