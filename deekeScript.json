@@ -1,7 +1,7 @@
 {
   "name": "Deeke",
-  "icon": "logo/dke.png",
-  "head": "img/robot.png",
+  "icon": "images/app.png",
+  "head": "images/app.png",
   "settingTopBg": "img/setting-top.png",
   "host": "https://home.deeke.top",
   "switchSetting": {
