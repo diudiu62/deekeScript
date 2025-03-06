@@ -1,16 +1,25 @@
-let my = {
-    name: 1,
-    getName() {
-        return this.name;
+let myTask = {
+    intoApp() {
+        //打开并进入App
     },
 
-    setName(name: number) {
-        let x: any = 42;
+    backApp() {
+        //退出当前App
+    },
 
-         x.foo();  // 虽然 `x` 没有 `foo` 方法，但 TypeScript 不会报错
-        return this.name;
+    task(){
+        //任务代码
+    },
+
+    run() {
+        try {
+            this.intoApp();//打开App
+            this.task();//执行任务
+        } catch (e) {
+            console.log(e);
+            this.backApp();//出现异常，退出当前App
+        }
     }
 }
-console.log("name = " + my.getName());
-console.log(my.setName(0));
-console.log(my.setName(1));
+
+myTask.run();
