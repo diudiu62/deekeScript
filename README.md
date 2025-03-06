@@ -15,12 +15,14 @@
 > 阅读上述文档内容，并且安装相关软件和依赖
 
 ### 安装方式一：npm安装方式【推荐】
+>
 > 步骤一：创建文件夹
 > 
 > 步骤二：执行下面的脚本
 ```npm i deeke-script-app```
 
 ### 安装方式二：git&npm安装方式
+>
 > git clone https://github.com/DeekeScript/deekeScript.git ./
 > 
 > npm install
