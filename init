@@ -1,0 +1,40 @@
+const { default: inquirer } = require('inquirer');
+const fs = require('fs');
+const path = require('path');
+
+function generateFiles(answers) {
+    const projectPath = path.dirname(path.dirname(__dirname)); // 输出：/Users/username/project
+    const files = fs.readdirSync(projectPath);
+
+    if (files.length > 3 || !files.includes('package.json') || !files.includes('package-lock.json') || !files.includes('node_modules')) {
+        throw new Error('请清空当前文件夹，并重新运行命令');
+    }
+
+    const entries = fs.readdirSync(__dirname, { withFileTypes: true });
+    const excludeFiles = ['node_modules', 'init', 'test.js']; // 需排除的文件名列表
+
+    const filteredEntries = entries.filter(entry =>
+        !excludeFiles.includes(entry.name)
+    );
+
+    filteredEntries.forEach(entry => {
+        const srcPath = path.join(__dirname, entry.name);
+        const destPath = path.join(projectPath, entry.name);
+
+        if (entry.isFile()) {
+            fs.copyFileSync(srcPath, destPath);
+        } else if (entry.isDirectory()) {
+            fs.cpSync(srcPath, destPath, { recursive: true });
+        }
+    });
+}
+
+generateFiles({});
+
+/**
+inquirer.prompt([
+    { name: 'name', message: '请输入项目名称：' },
+    { name: 'host', message: '请输入项目域名：' }
+
+]).then(answers => generateFiles(answers));
+*/

@@ -1,14 +1,15 @@
 {
-  "name": "my-first-deeke-script-app",
-  "version": "1.0.0",
-  "description": "我的第一个DeekeScript应用",
+  "name": "deeke-script-app",
+  "version": "1.0.9",
+  "description": "DeekeScript应用",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "deekeScript-zip-build": "tsc && ts-node --esm src/deekeScriptZipBuild",
     "dev": "tsc --watch",
     "webpack-build": "webpack --mode production",
-    "deekeScript-zip-build-webpack": "webpack --mode production && ts-node --esm src/deekeScriptZipBuild"
+    "deekeScript-zip-build-webpack": "webpack --mode production && ts-node --esm src/deekeScriptZipBuild",
+    "postinstall": "ts-node --esm init"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,10 @@
     "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16"
+    "adm-zip": "^0.5.16",
+    "inquirer": "^12.4.2"
+  },
+  "bin": {
+    "init": "node ./init.js"
   }
 }

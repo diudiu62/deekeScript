@@ -3,7 +3,6 @@
         "jiangqiao"
     ],
     "files.exclude": {
-        "**/node_modules": true, // 隐藏 node_modules 文件夹
         "**/@deekeScript": true, // 隐藏 DeekeScript文件夹
     }
 }

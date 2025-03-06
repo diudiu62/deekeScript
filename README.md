@@ -8,28 +8,24 @@
 
 ## 使用步骤
 
-### 1. 安装node.js
-> https://nodejs.org/zh-cn/download/
 
-### 2.安装git
-> https://git-scm.com/downloads
+### 安装前准备
+> 请移步到<a target="_blank" href="https://doc.deeke.cn">https://doc.deeke.cn</a> 或者 <a target="_blank" href="https://deekescript.github.io/">https://deekescript.github.io/</a>
+>
+> 阅读上述文档内容，并且安装相关软件和依赖
 
-### 3. 安装vscode
-> https://code.visualstudio.com/download
+### 安装方式一：npm安装方式【推荐】
+> 步骤一：创建文件夹
+> 步骤二：执行下面的脚本
+```npm i deeke-script-app```
 
-### 4.使用git拉取本仓库代码到本地
+### 安装方式二：git&npm安装方式
 > git clone https://github.com/DeekeScript/deekeScript.git ./
-
-### 5.安装依赖
 > npm install
 
-### 6.编写代码
+### 编写代码
 > 请在src下创建代码文件
 
-### 7.安装DeekeScript插件，并代码调试
-> 请移步到<a target="_blank" href="https://doc.deeke.cn">https://doc.deeke.cn</a> 或者 <a target="_blank" href="https://deekescript.github.io/">https://deekescript.github.io/</a>
 
 ## Tips 📢
 > 文件夹@deekeScript请不要删除，此代码会提供代码提示能力~
-
-> 项目的node_modules文件夹不见了？请打开.vscode/setting.json注释掉隐藏代码即可~
