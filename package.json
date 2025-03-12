@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
-    "inquirer": "^12.4.2"
+    "inquirer": "^12.4.2",
+    "ts-node": "^10.9.2"
   },
   "bin": {
     "init": "node ./init.js"
