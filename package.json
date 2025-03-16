@@ -7,8 +7,6 @@
     "build": "tsc",
     "deekeScript-zip-build": "tsc && ts-node --esm ./deekeScriptZipBuild",
     "dev": "tsc --watch",
-    "webpack-build": "webpack --mode production",
-    "deekeScript-zip-build-webpack": "webpack --mode production && ts-node --esm ./deekeScriptZipBuild",
     "postinstall": "ts-node --esm init"
   },
   "repository": {
@@ -32,14 +30,9 @@
     "terser-webpack-plugin": "^5.3.11",
     "ts-loader": "^9.5.1",
     "typescript": "^5.8.2",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0",
-    "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
-    "copy-webpack-plugin": "^13.0.0",
     "inquirer": "^12.4.2",
     "ts-node": "^10.9.2"
   },

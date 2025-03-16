@@ -444,7 +444,7 @@
       "title": "功能说明",
       "icon": "images/test/manual.png",
       "type": "notice",
-      "file": "task.html"
+      "file": "script/task.html"
     },
     {
       "title": "智能话术",
@@ -506,7 +506,7 @@
       "title": "数据统计",
       "icon": "images/test/statistics.png",
       "type": "statistics",
-      "jsFile": "statistics/statistics.js"
+      "jsFile": "script/statistics/statistics.js"
     },
     {
       "title": "上传日志",
