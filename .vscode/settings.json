@@ -1,6 +1,6 @@
 {
     "cSpell.words": [
-        "jiangqiao"
+        "deekeScript"
     ],
     "files.exclude": {
         "**/@deekeScript": true, // 隐藏 DeekeScript文件夹

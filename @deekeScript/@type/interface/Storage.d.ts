@@ -1,8 +1,4 @@
-declare global {
-    var Storage: Storage;
-}
-
-interface Storage {
+interface storage {
     /**
      * 创建存储实例  全局使用一个即可
      * @param db 数据库名称
@@ -104,6 +100,10 @@ interface Storage {
      * 清空所有值
      */
     public clear(): boolean;
+}
+
+declare global {
+    var Storage: storage;
 }
 
 export { };
