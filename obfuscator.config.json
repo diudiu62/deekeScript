@@ -1,0 +1,14 @@
+{
+    "compact": false,
+    "rotateStringArray": true,
+    "controlFlowFlattening": true,
+    "deadCodeInjection": true,
+    "stringArray": true,
+    "stringArrayThreshold": 0.75,
+    "disableConsoleOutput": false,
+    "sourceMap": true,
+    "reservedNames": [],
+    "transformObjectKeys": true,
+    "unicodeEscapeSequence": true,
+    "exclude": ["script/statistics/**/*.js"]
+}

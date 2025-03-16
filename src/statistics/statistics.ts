@@ -1,4 +1,3 @@
-/* @webpack-obfuscator:exclude */
 var deekeStatistics = {
     getDate() {
         let d = new Date();

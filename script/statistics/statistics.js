@@ -1,5 +1,4 @@
 "use strict";
-/* @webpack-obfuscator:exclude */
 var deekeStatistics = {
     getDate: function () {
         var d = new Date();

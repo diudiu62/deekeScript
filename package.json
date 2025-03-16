@@ -4,9 +4,9 @@
   "description": "DeekeScript应用",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc",
-    "deekeScript-zip-build": "tsc && ts-node --esm ./deekeScriptZipBuild",
-    "dev": "tsc --watch",
+    "build": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script",
+    "build-obfuscator": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script && javascript-obfuscator script --output script --config obfuscator.config.json",
+    "deekeScript-zip-build": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script && javascript-obfuscator script --output script --config obfuscator.config.json && ts-node --esm ./deekeScriptZipBuild",
     "postinstall": "ts-node --esm init"
   },
   "repository": {
@@ -27,12 +27,14 @@
     "@types/node": "^22.13.9",
     "file-loader": "^6.2.0",
     "glob": "^11.0.0",
+    "javascript-obfuscator": "^4.1.1",
     "terser-webpack-plugin": "^5.3.11",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.2"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
+    "cpx": "^1.5.0",
     "inquirer": "^12.4.2",
     "ts-node": "^10.9.2"
   },
