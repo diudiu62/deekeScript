@@ -16,7 +16,7 @@
         {
           "title": "推荐营销",
           "icon": "images/test/finger.png",
-          "jsFile": "tasks/dy.js",
+          "jsFile": "script/task/dy.js",
           "settingPage": {
             "params": [
               {
@@ -178,7 +178,7 @@
         {
           "title": "同城营销",
           "icon": "images/test/city.png",
-          "jsFile": "tasks/dyCity.js",
+          "jsFile": "script/task/dyCity.js",
           "settingPage": {
             "params": [
               {
@@ -363,7 +363,7 @@
                     "title": "一键取赞",
                     "hidden": false,
                     "icon": "images/test/cancel_zan.png",
-                    "jsFile": "tasks/tool.js",
+                    "jsFile": "script/task/tool.js",
                     "settingPage": {
                       "params": [
                         {
@@ -377,7 +377,7 @@
                     "title": "一键取关",
                     "hidden": false,
                     "icon": "images/test/cancel_focus.png",
-                    "jsFile": "tasks/tool.js",
+                    "jsFile": "script/task/tool.js",
                     "settingPage": {
                       "params": [
                         {
@@ -396,7 +396,7 @@
                     "title": "粉丝回访",
                     "hidden": false,
                     "icon": "images/test/view_back.png",
-                    "jsFile": "tasks/tool.js",
+                    "jsFile": "script/task/tool.js",
                     "settingPage": {
                       "params": [
                         {

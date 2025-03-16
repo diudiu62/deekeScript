@@ -3,7 +3,8 @@ const fs = require('fs');          // 引入 fs 模块‌:ml-citation{ref="5" da
 const AdmZip = require('adm-zip');  // 引入 adm-zip 库‌:ml-citation{ref="3,4" data="citationList"}  
 
 // 获取上层目录路径
-const parentDir = path.join(__dirname, '..');
+// const parentDir = path.join(__dirname, '..');
+const parentDir = __dirname;
 console.log('开始执行打包');
 
 fs.unlink(path.join(parentDir, 'deekeScript.zip'), (err) => {

@@ -2,6 +2,7 @@ const path = require('path');
 const glob = require('glob');
 const scriptDir = 'script';
 const WebpackObfuscator = require('webpack-obfuscator');//代码混淆
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // 复制插件
 
 module.exports = {
     devtool: 'source-map',
@@ -52,5 +53,20 @@ module.exports = {
             disableConsoleOutput: false,  // 禁用 console 输出
             sourceMap: true,  // 启用生成 sourcemap
         }), // 指定要混淆的文件
+
+        // 复制非 ts 文件到 script 目录
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         {
+        //             from: 'src/**/*',
+        //             to({ absoluteFilename }) {
+        //                 return path.relative('src', absoluteFilename);
+        //             },
+        //             globOptions: {
+        //                 ignore: ['**/*.ts'], // 忽略 ts 文件
+        //             },
+        //         },
+        //     ],
+        // }),
     ]
 };
