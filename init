@@ -1,4 +1,3 @@
-const { default: inquirer } = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 
@@ -6,12 +5,12 @@ function generateFiles(answers) {
     const projectPath = path.dirname(path.dirname(__dirname)); // 输出：/Users/username/project
     const files = fs.readdirSync(projectPath);
 
-    if (files.length > 3 || !files.includes('package.json') || !files.includes('package-lock.json') || !files.includes('node_modules')) {
+    if (files.includes('init.lock')) {
         return ;
     }
 
     const entries = fs.readdirSync(__dirname, { withFileTypes: true });
-    const excludeFiles = ['node_modules', 'init', 'test.js']; // 需排除的文件名列表
+    const excludeFiles = ['node_modules']; // 需排除的文件名列表
 
     const filteredEntries = entries.filter(entry =>
         !excludeFiles.includes(entry.name)
@@ -27,14 +26,7 @@ function generateFiles(answers) {
             fs.cpSync(srcPath, destPath, { recursive: true });
         }
     });
+    
 }
 
 generateFiles({});
-
-/**
-inquirer.prompt([
-    { name: 'name', message: '请输入项目名称：' },
-    { name: 'host', message: '请输入项目域名：' }
-
-]).then(answers => generateFiles(answers));
-*/
