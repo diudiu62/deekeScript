@@ -4,9 +4,10 @@
   "description": "DeekeScript应用",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script",
-    "build-obfuscator": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script && javascript-obfuscator script --output script --config obfuscator.config.json",
-    "deekeScript-zip-build": "tsc && cpx \"src/**/*.{json,html,css,txt}\" script && javascript-obfuscator script --output script --config obfuscator.config.json && ts-node --esm ./deekeScriptZipBuild",
+    "build": "cpx \"src/**/*\" script",
+    "build-zip": "cpx \"src/**/*\" script && ts-node --esm ./deekeScriptZipBuild",
+    "build-obfuscator": "cpx \"src/**/*\" script && javascript-obfuscator script --output script --config obfuscator.config.json",
+    "build-obfuscator-zip": "cpx \"src/**/*\" script && javascript-obfuscator script --output script --config obfuscator.config.json && ts-node --esm ./deekeScriptZipBuild",
     "postinstall": "ts-node --esm init"
   },
   "repository": {
@@ -16,7 +17,7 @@
   "keywords": [
     "DeekeScript应用"
   ],
-  "author": "jiangqiao",
+  "author": "DeekeScript",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DeekeScript/deekeScript/issues"
@@ -28,7 +29,6 @@
     "file-loader": "^6.2.0",
     "glob": "^11.0.0",
     "javascript-obfuscator": "^4.1.1",
-    "terser-webpack-plugin": "^5.3.11",
     "ts-loader": "^9.5.1",
     "typescript": "^5.8.2"
   },

@@ -1,1 +1,1 @@
-{"version":3,"file":"dyApp.js","sourceRoot":"","sources":["../../src/task/dyApp.ts"],"names":[],"mappings":";AAAA,IAAM,KAAK,GAAG;IACV,OAAO;QACH,OAAO,SAAS,CAAC;IACrB,CAAC;CACJ,CAAA;AAED,iBAAS,KAAK,CAAC"}
+{"version":3,"sources":["sourceMap"],"names":["dyApp","module"],"mappings":";;;;;;;CAAA;8BAAA;;;;;;;;;;;;;;;;;;;;;;CAAA;;;;;;;;;;;;;;uBAAA;uBAAA;kCACW,Y;;;;;EADX;AAAA,MAAMA,KAAA,G,WAAN;AAMAC,MAAA,C,8BAAA,IAAiBD,KAAjB","sourcesContent":["const dyApp = {\r\n    getName(){\r\n        return \"appName\";\r\n    }\r\n}\r\n\r\nmodule.exports = dyApp;"]}

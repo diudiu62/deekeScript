@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["es6"],  // 不包含 "dom"
+        "checkJs": true
+    },
+    "include": [
+        "src/**/*",
+        "@deekeScript/**/*"
+    ]
+}

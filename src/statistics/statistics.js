@@ -5,7 +5,7 @@ var deekeStatistics = {
         let date = d.getDate();
         return (m >= 10 ? m : ('0' + m)) + '.' + (date >= 10 ? date : ('0' + date));
     },
-    getData(time: string) {
+    getData(time) {
         time = time || this.getDate();
         return {
             s_viewVideo: Storage.getInteger('s_viewVideo' + time) || 0,
@@ -42,13 +42,13 @@ var deekeStatistics = {
 
     getWeekData() {
         let dates = this.getWeekDate();
-        let data: any = [];
+        let data = [];
         for (let i in dates) {
             data.push([dates[i], this.getData(dates[i])]);
         }
 
         //数据整理
-        let res: any = [];
+        let res = [];
         let ids = ['s_viewVideo', 's_viewTargetVideo', 's_zan', 's_comment', 's_zanComment', 's_privateMsg', 's_focus', 's_viewUser'];
         for (let i in ids) {
             res[ids[i]] = [];

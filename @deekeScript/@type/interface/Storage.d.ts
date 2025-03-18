@@ -1,3 +1,8 @@
+
+declare global {
+    var Storage: storage;
+}
+
 interface storage {
     /**
      * 创建存储实例  全局使用一个即可
@@ -100,10 +105,6 @@ interface storage {
      * 清空所有值
      */
     public clear(): boolean;
-}
-
-declare global {
-    var Storage: storage;
 }
 
 export { };

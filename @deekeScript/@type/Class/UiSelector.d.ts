@@ -1,7 +1,6 @@
-import { UiObject } from "../interface/UiObject";
 
 declare global {
-    function UiSelector(simepleMode: boolean|undefined): UiSelector;
+    function UiSelector(simpleMode?: boolean): UiSelector;
     /**
      * 控件选择器
      */
