@@ -2,7 +2,7 @@ let dyApp = require("./dyApp");
 
 let tag = UiSelector().id('name').findOne();
 
-console.log(tag.click());
+// console.log(tag.click());
 let config = {
     toker_view_video_keywords: Storage.get('toker_view_video_keywords'),
     toker_view_video_second: Storage.getInteger('toker_view_video_second'),

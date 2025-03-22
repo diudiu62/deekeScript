@@ -1,0 +1,11 @@
+const uglifyConfig = require('./uglify-config.json');
+const gulp = require('gulp');
+const uglify = require('gulp-uglify');
+
+function compressJS() {
+  return gulp.src('script/**/*.js')
+    .pipe(uglify(uglifyConfig))  // 应用 JSON 配置
+    .pipe(gulp.dest('script'));
+}
+
+compressJS();
