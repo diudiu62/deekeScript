@@ -1,8 +1,9 @@
 {
-  "name": "Deeke",
+  "name": "测试",
   "icon": "images/test/app.png",
   "head": "images/test/app.png",
   "settingTopBg": "images/test/setting-top.png",
+  "version": "1.0.0",
   "host": "https://home.deeke.top",
   "switchSetting": {
     "alipay": true
