@@ -21,6 +21,7 @@ let obj = {
 //注意java.lang.Thread和java.lang.Runnable外层不需要引号
 let javaImporterTest = JavaImporter(java.lang.Thread, java.lang.Runnable);
 
+//@ts-ignore
 with (javaImporterTest) {
     new Thread(new Runnable(obj)).start();
 }

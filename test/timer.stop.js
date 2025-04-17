@@ -1,23 +1,28 @@
+let i = 0;
+let timer = setInterval(() => {
+    console.log(i++);
+}, 3000);
 
-let obj = {
+let b = {
     run: function () {
-        setInterval(() => {
-            console.log('线程');
+        let i = 0;
+        let timer = setInterval(() => {
+            console.log("线程：" + i++);
         }, 3000);
-    }
+    } 
 }
 
-new java.lang.Thread(new java.lang.Runnable(obj)).start();
+new java.lang.Thread(new java.lang.Runnable(b)).start();
 
 
-setInterval(() => {
-    console.log('当前线程1');
-}, 3000);
-
-
-setInterval(() => {
-    console.log('当前线程2');
-}, 3000);
-
+// setTimeout(() => {
+//     console.log('停止');
+// }, 3000);
+console.log("timer", timer);
 System.sleep(7000);
+
+
 Engines.closeOther();
+
+
+
