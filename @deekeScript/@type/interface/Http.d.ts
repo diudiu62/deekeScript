@@ -16,7 +16,7 @@ interface Http {
      * @param json 请求内容
      * @param headers 请求头n的请求头，如：{"Content-Type":"application/json"}
      */
-    public postHeaders(url: string, json: string, headers: object): string | null;
+    public postHeaders(url: string, json: object, headers: object): string | null;
 
     /**
      * get请求
