@@ -17,7 +17,7 @@ interface Images {
 
     public find(source: Mat, template: Mat, threshold: number): Point[];
 
-    public capture(): String;
+    public capture(): string;
 
     public getColor(imageFile: string, pixelX: number, pixelY: number): string;
 
