@@ -2,7 +2,7 @@
 
 let promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
-        console.log(234);
+        console.log(Device.height());
         resolve('成功');
     }, 1000);
 });
