@@ -50,6 +50,16 @@ interface Device {
     public getUuid(): string;
 
     /**
+     * 获取设备卡密
+     */
+    public getToken(): string;
+
+    /**
+     * 获取设备其他信息（此方法可以取代getToken和getUuid）
+     */
+    public getAttr(key: string): string;
+
+    /**
      * 判断屏幕是否亮着
      */
     public isScreenOn(): boolean;
