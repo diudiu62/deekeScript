@@ -93,7 +93,7 @@ interface storage {
      * 获取对象类型的值
      * @param key 键
      */
-    public getObject(key: string): object;
+    public getObj(key: string): object;
 
     /**
      * 移除某个键
