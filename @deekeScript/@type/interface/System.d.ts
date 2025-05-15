@@ -96,7 +96,7 @@ interface System {
      * @param dataForm 
      * @param content 
      */
-    public getDataForm(key: string, dataForm: string, content: string): string | null;
+    public getDataFrom(key: string, dataForm: string, content: string): string | null;
 }
 
 export { };
