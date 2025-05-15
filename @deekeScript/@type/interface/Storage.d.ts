@@ -30,7 +30,7 @@ interface storage {
      * @param key 键
      * @param value 值
      */
-    public putBool(key: string, value: boolean): boolean;
+    public putBoolean(key: string, value: boolean): boolean;
 
     /**
      * 设置双精度值
@@ -51,13 +51,13 @@ interface storage {
      * @param key 键
      * @param set 值
      */
-    public putSet(key: string, set: Set<string>): boolean;
+    public putArray(key: string, arr: Array): boolean;
 
     /**
      * 获取集合（字符串）
      * @param key 键
      */
-    public getArray(key: string): Set<string>;
+    public getArray(key: string): Array;
 
     /**
      * 获取字符串
