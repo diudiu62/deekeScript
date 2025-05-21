@@ -8,3 +8,8 @@ console.log(rgba);
 
 let positions = Images.findColor(imageStr, rgba);
 console.log(positions);
+
+let position = Images.getTextAndRegion(imageStr);
+for(let i in position){
+    console.log(position[i].text, position[i].rect.height(), position[i].rect.width());
+}
