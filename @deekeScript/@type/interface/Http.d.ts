@@ -35,7 +35,7 @@ interface Http {
     public postFile(url: string, files: string[], params: object, httpCallback: {
         success: (response: any) => void,
         fail: (response: any) => void
-    }): boolean;
+    }): void;
 }
 
 export { };
