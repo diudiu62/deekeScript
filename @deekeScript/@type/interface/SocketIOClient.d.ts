@@ -22,7 +22,20 @@ interface socketIOClient {
      */
     public isConnected(): boolean;
 
+    /**
+     * 向服务器发送事件和数据
+     * @param eventName  事件名称
+     * @param data  数据
+     */
     public emit(eventName: string, data: object): void;
+
+    /**
+     * 向服务器发送事件和数据
+     * @param eventName 事件名称
+     * @param data 数据
+     * @param callback 服务器确认后的回调函数
+     */
+    public emit(eventName: string, data: object, callback: function): void;
 
     /**
      * 监听事件
