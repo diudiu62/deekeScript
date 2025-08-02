@@ -5,6 +5,7 @@ client.onClose = function(){
 
 }
 
+
 client.onMessage = function(msg){
 
 }
@@ -13,7 +14,7 @@ client.onOpen = function(){
 
 }
 
-client.onError = function(code, msg){
+client.onError = function(errorMsg){
 
 }
 
