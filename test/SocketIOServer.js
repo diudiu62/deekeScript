@@ -37,6 +37,9 @@ rl.on('line', (line) => {
   if(msg.length > 0) {
     // 给所有客户端广播 message 事件
     io.emit('message', msg);
+    if(msg === '333'){
+      io.emit('getAccountInfo', msg);
+    }
     console.log(`已广播消息: ${msg}`);
   }
   rl.prompt();

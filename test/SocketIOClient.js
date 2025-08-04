@@ -1,21 +1,21 @@
-let socketIOClient = SocketIOClient.getInstance("http://192.168.0.111:3000");
+let socketIoClient = SocketIoClient.getInstance("http://192.168.0.111:3000");
 
-socketIOClient.on("connect_error", (error) => {
+socketIoClient.on("connect_error", (error) => {
     console.error("连接错误:", error);
 });
 
-socketIOClient.on("error", (error) => {
+socketIoClient.on("error", (error) => {
     console.error("通用错误:", error);
 });
 
-socketIOClient.on("connect_timeout", () => {
+socketIoClient.on("connect_timeout", () => {
     console.error("连接超时");
 });
 
 
-socketIOClient.on("connect", function () {
-    console.log('是否连接成功：', socketIOClient.isConnected());
-    socketIOClient.on("message", function (data) {
+socketIoClient.on("connect", function () {
+    console.log('是否连接成功：', socketIoClient.isConnected());
+    socketIoClient.on("message", function (data) {
         console.log('服务端发来的消息：', data);
     });
 
@@ -26,12 +26,12 @@ socketIOClient.on("connect", function () {
             sex: ["男"]
         }
     });
-    socketIOClient.emit("message", str, function (data) {
+    socketIoClient.emit("message", str, function (data) {
         console.log('确认参数', data);
     });
 });
 
-socketIOClient.connect();
+socketIoClient.connect();
 
 while (true) {
     System.sleep(1000);

@@ -1,8 +1,8 @@
 global {
-  var SocketIOClient: socketIOClient;
+  var SocketIoClient: socketIoClient;
 }
 
-interface socketIOClient {
+interface socketIoClient {
   /**
    * 获取socketIOClient实例
    * @param serverUrl  socketIOServer地址
