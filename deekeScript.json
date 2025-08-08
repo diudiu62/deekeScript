@@ -11,167 +11,81 @@
   },
   "groups": [
     {
-      "title": "DY·万能引流",
+      "title": "牛马打卡机",
       "titleHidden": false,
       "hidden": false,
       "methods": [
         {
-          "title": "推荐营销",
+          "title": "钉钉打卡",
           "icon": "images/test/finger.png",
           "jsFile": "script/task/dy.js",
           "settingPage": {
             "params": [
               {
-                "type": "numberRange",
-                "label": "观看时长（秒）",
-                "name": "toker_view_video_second",
+                "type": "number",
+                "label": "上班打卡时间（时）",
+                "name": "up_clock_hour",
                 "max": 60,
-                "min": 5,
-                "value": 12,
-                "step": 1
-              },
-              {
-                "type": "textArea",
-                "label": "关键词筛选（多个使用逗号隔开）",
-                "name": "toker_view_video_keywords",
-                "value": "",
-                "notice": "* 关键词不填则操作所有"
+                "min": 5
               },
               {
                 "type": "numberRange",
-                "label": "点赞频率（%）",
-                "name": "toker_zan_rate",
-                "max": 100,
+                "label": "上班最迟打卡分钟数",
+                "name": "up_clock_minute_range",
+                "max": 60,
                 "min": 0,
                 "step": 1,
-                "value": 100
+                "value": 30
+              },
+              {
+                "type": "number",
+                "label": "下班打卡时间（时）",
+                "name": "down_clock_hour",
+                "max": 60,
+                "min": 5
               },
               {
                 "type": "numberRange",
-                "label": "评论频率（%）",
-                "name": "toker_comment_rate",
-                "max": 100,
+                "label": "下班最早打卡分钟数",
+                "name": "down_clock_minute_range",
+                "max": 60,
                 "min": 0,
                 "step": 1,
-                "value": 100
+                "value": 30
               },
               {
-                "type": "numberRange",
-                "label": "关注频率（%）",
-                "name": "toker_focus_rate",
-                "max": 100,
-                "min": 0,
-                "step": 1,
-                "value": 1
+                "type": "notice",
+                "title": "最迟时间往前取15分钟随机数，最早时间往后取15分钟随机数"
               },
               {
-                "type": "numberRange",
-                "label": "私信频率（%）",
-                "name": "toker_private_msg_rate",
-                "max": 100,
-                "min": 0,
-                "step": 1,
-                "value": 1
-              },
-              {
-                "type": "numberRange",
-                "label": "评论区五连赞频率（%）",
-                "name": "toker_comment_area_zan_rate",
-                "max": 100,
-                "min": 0,
-                "step": 1,
-                "value": 100
-              },
-              {
-                "type": "checkboxGroup",
-                "label": "性别",
-                "name": "toker_run_sex",
-                "columnCount": 6,
-                "children": [
-                  "女",
-                  "男",
-                  "未知"
-                ],
-                "values": [
-                  "0",
-                  "1",
-                  "2"
-                ]
-              },
-              {
-                "type": "numberRange",
-                "label": "最小年龄",
-                "name": "toker_run_min_age",
-                "max": 100,
-                "min": 0,
-                "step": 1,
-                "value": 0
-              },
-              {
-                "type": "numberRange",
-                "label": "最大年龄",
-                "name": "toker_run_max_age",
-                "max": 100,
-                "min": 0,
-                "step": 1,
-                "value": 60
-              },
-              {
-                "type": "checkboxGroup",
+                "type": "select",
                 "label": "运行时间",
                 "name": "toker_run_hour",
-                "columnCount": 6,
-                "children": [
-                  "0时",
-                  "1时",
-                  "2时",
-                  "3时",
-                  "4时",
-                  "5时",
-                  "6时",
-                  "7时",
-                  "8时",
-                  "9时",
-                  "10时",
-                  "11时",
-                  "12时",
-                  "13时",
-                  "14时",
-                  "15时",
-                  "16时",
-                  "17时",
-                  "18时",
-                  "19时",
-                  "20时",
-                  "21时",
-                  "22时",
-                  "23时"
-                ],
-                "values": [
-                  "0",
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9",
-                  "10",
-                  "11",
-                  "12",
-                  "13",
-                  "14",
-                  "15",
-                  "16",
-                  "17",
-                  "18",
-                  "19",
-                  "20",
-                  "21",
-                  "22",
-                  "23"
+                "options": [
+                  { "label": "0时", "value": 0 },
+                  { "label": "1时", "value": 1 },
+                  { "label": "2时", "value": 2 },
+                  { "label": "3时", "value": 3 },
+                  { "label": "4时", "value": 4 },
+                  { "label": "5时", "value": 5 },
+                  { "label": "6时", "value": 6 },
+                  { "label": "7时", "value": 7 },
+                  { "label": "8时", "value": 8 },
+                  { "label": "9时", "value": 9 },
+                  { "label": "10时", "value": 10 },
+                  { "label": "11时", "value": 11 },
+                  { "label": "12时", "value": 12 },
+                  { "label": "13时", "value": 13 },
+                  { "label": "14时", "value": 14 },
+                  { "label": "15时", "value": 15 },
+                  { "label": "16时", "value": 16 },
+                  { "label": "17时", "value": 17 },
+                  { "label": "18时", "value": 18 },
+                  { "label": "19时", "value": 19 },
+                  { "label": "20时", "value": 20 },
+                  { "label": "21时", "value": 21 },
+                  { "label": "22时", "value": 22 },
+                  { "label": "23时", "value": 23 }
                 ]
               }
             ]
@@ -258,16 +172,8 @@
                 "label": "性别",
                 "name": "toker_city_run_sex",
                 "columnCount": 6,
-                "children": [
-                  "女",
-                  "男",
-                  "未知"
-                ],
-                "values": [
-                  "0",
-                  "1",
-                  "2"
-                ]
+                "children": ["女", "男", "未知"],
+                "values": ["0", "1", "2"]
               },
               {
                 "type": "numberRange",

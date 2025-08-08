@@ -1,6 +1,6 @@
 const dyApp = {
     getName(){
-        return "appName";
+        return "com.alibaba.android.rimet";
     }
 }
 
